@@ -24,6 +24,11 @@ header.scrolled {
 	gap: 1.5rem;
 }
 
+.cafe a {
+	display: flex;
+	align-items: center;
+}
+
 .logo {
 	width: 4rem;
 	height: auto;
@@ -45,6 +50,8 @@ header.scrolled {
 	display: flex;
 	gap: 3rem;
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .nav_link li a {
@@ -54,6 +61,7 @@ header.scrolled {
 	font-size: 1.6rem;
 	color: var(--text-color);
 	transition: all var(--transition-speed) ease;
+	text-decoration: none;
 }
 
 .nav_link li a i {
@@ -63,6 +71,12 @@ header.scrolled {
 .nav_link li a:hover {
 	color: var(--primary-color);
 	transform: translateY(-2px);
+}
+
+.nav-right {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
 }
 
 .cart-icon {
@@ -80,6 +94,14 @@ header.scrolled {
 	display: none;
 	cursor: pointer;
 	padding: 0.5rem;
+	background: none;
+	border: none;
+	color: var(--text-color);
+	font-size: 2rem;
+}
+
+.mobile-menu-btn:hover {
+	color: var(--primary-color);
 }
 
 @media (max-width: 768px) {

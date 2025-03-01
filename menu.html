@@ -4,9 +4,21 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<!-- Linked CSS -->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/menu.css">
+	
 
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<!-- Font Icon -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+	<!-- Font Type -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+
 
 	<title>Menu</title>
 
@@ -28,13 +40,27 @@
 	<div id="scrollPath"></div>
 	<!-- End of Customized scroll bar -->
 
-	<!-- Return Button -->
-	<div class="homepage">
-		<a href="index.html">
-			<i class="fa-solid fa-house-chimney"></i><span>Home</span>
-		</a>
-	</div>
-	<!-- End of Return Button -->
+	<!-- Header -->
+	<header>
+		<div class="cafe">
+			<img class="logo" src="asset/other/logo.png" alt="Leaf Us Café Logo">
+			<div class="name">Leaf Us Café</div>
+		</div>
+
+		<nav>
+			<ul class="nav_link">
+				<li><a href="index.html"><i class="fa-solid fa-house-chimney"></i><span>Home</span></a></li>
+				<li><a href="menu_background"><i class="fa-solid fa-utensils"></i><span>Menu</span></a></li>
+				<li><a href="index.html#event_background"><i class="fa-solid fa-tags"></i><span>Events</span></a></li>
+				<li><a href="index.html#about_background"><i class="fa-solid fa-circle-info"></i><span>About</span></a></li>
+			</ul>
+		</nav>
+
+		<img class="cart-icon" src="asset/other/shopping_cart.png" alt="Shopping Cart">
+		<button class="mobile-menu-btn">
+			<i class="fa-solid fa-bars"></i>
+		</button>
+	</header>
 
 	<div class="wrapper">
 		<div class="category-filter">
@@ -57,7 +83,7 @@
 				<div class="filter-items">
 					<div class="product">
 						<div class=pcard>
-							<h2 class=pname>Brown Sugar Caffe Latte</h2>
+							<h2 class=pname>Brown Sugar Latte</h2>
 							<span class="price">RM8.00</span>
 							<a class="popup-btn">View</a>
 							<img src="asset/menu/brown sugar caffe latte.jpg" class="p_img">
@@ -73,14 +99,14 @@
 									<p>Brown Sugar Caffe Latte is a sweet and soft coffee drink made from espresso, brown sugar, and milk. It's perfect for an afternoon dessert.</p>
 									<span class="price">RM8.00</span>
 									<a href="#" class="add-cart">Add to Cart</a>
-									<a href="" class="add-wish">Add to Wishlish</a>
+									<a href="#" class="add-wish">Add to Wishlish</a>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="product">
 						<div class=pcard>
-							<h2 class=pname>Butter Sourdough Croissant</h2>
+							<h2 class=pname>Sourdough Croissant</h2>
 							<span class="price">RM8.00</span>
 							<a class="popup-btn">View</a>
 							<img src="asset/menu/butter sourdough croissant.jpg" class="p_img">
@@ -92,7 +118,7 @@
 									<img src="asset/menu/butter sourdough croissant.jpg">
 								</div>
 								<div class="info">
-									<h2 class=pname>Butter Sourdough Croissant<br><span>Bread</span></h2>
+									<h2 class=pname>Sourdough Croissant<br><span>Bread</span></h2>
 									<p>Since we don't use any commercial yeast, our sourdough croissants rise very slowly and take 3 days. The thin layers of cream are perfectly balanced by the slightly tart flavors that this berry-like process creates.</p>
 									<span class="price">RM8.00</span>
 									<a href="#" class="add-cart">Add to Cart</a>
@@ -172,7 +198,7 @@
 					</div>
 					<div class="product">
 						<div class=pcard>
-							<h2 class=pname>New York Cheesecake</h2>
+							<h2 class=pname>Cheesecake</h2>
 							<span class="price">RM8.00</span>
 							<a class="popup-btn">View</a>
 							<img src="asset/menu/finest ny cheesecake.jpg" class="p_img">
@@ -195,7 +221,7 @@
 					</div>
 					<div class="product">
 						<div class=pcard>
-							<h2 class=pname>French Chocolate Croissant</h2>
+							<h2 class=pname>Chocolate Croissant</h2>
 							<span class="price">RM8.00</span>
 							<a class="popup-btn">View</a>
 							<img src="asset/menu/french chocolate croissant.jpg" class="p_img">
@@ -218,7 +244,7 @@
 					</div>
 					<div class="product">
 						<div class=pcard>
-							<h2 class=pname>Jasmine Green Milk Tea</h2>
+							<h2 class=pname>Green Milk Tea</h2>
 							<span class="price">RM8.00</span>
 							<a class="popup-btn">View</a>
 							<img src="asset/menu/jasmine green milk tea.jpg" class="p_img">
